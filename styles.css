@@ -1,0 +1,200 @@
+:root {
+    --background-color: #6B9071;
+    --primary-color: #375534;
+    --secondary-color: #AEC3B0;
+    --text-color: #E3EED4;
+    --delete-color: #ce4646;
+    --red-color: #d77777;
+}
+
+* {
+    font-family: Fira sans, sans-serif; ;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: -200px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+
+
+/*TABULKY*/
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    text-align: center;
+    margin:0 auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.table th {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-size: 20px;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+.table td {
+    color: var(--text-color);
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--primary-color );
+}
+
+.container h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.form-group label {
+    font-size: 1.1rem;
+}
+
+.form-group input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.form-group select {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 8px;
+}
+
+
+
+
+/*TLAČÍTKA*/
+
+.btn-new-order {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    margin-top: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-new-order:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.btn-delete {
+    background-color: var(--red-color);
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-delete:hover {
+    background-color: var(--delete-color);
+    color: var(--text-color);
+}
+
+.btn-edit {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-edit:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.submit-btn {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 5px 10px;
+    border: none;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.submit-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+
+.cancel-btn {
+    background-color: var(--red-color);
+    color: var(--primary-color);
+    padding: 5px 10px;
+    border: none;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cancel-btn:hover {
+    background-color: var(--delete-color);
+    color: var(--text-color);
+}
+
+.order-detail {
+    background-color: var(--secondary-color);
+    width: 20%;
+    padding: 1rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -100px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.order-detail a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.order-detail h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
